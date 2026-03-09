@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>プロンプトインジェクション体験デモ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="landing">
+    <h1>プロンプトインジェクション体験デモ</h1>
+    <p>以下の履歴書ページのURLをコピーし、ChatGPTやClaudeに「このページの内容を要約してください」と依頼してみてください。何が起きるでしょうか？</p>
+
+    <h2 style="text-align:left; margin-bottom: 16px;">使い方</h2>
+    <ol style="text-align:left; margin-bottom: 32px; padding-left: 24px; color: #555;">
+      <li>下のカードから履歴書ページを1つ選ぶ</li>
+      <li>ページのURLをコピーする</li>
+      <li>ChatGPT / Claude / Gemini などに「このURLの内容を要約して」と依頼する</li>
+      <li>LLMの回答を観察する — 何か変なことが起きていませんか？</li>
+      <li>ページのソースコードを確認し、何が仕込まれていたか調べる</li>
+    </ol>
+
+    <div class="cards">
+      <a href="resume-1.html" class="card">
+        <h3>履歴書 #1 — レベル: ★☆☆</h3>
+        <p>一番シンプルな手法です。まずはここから試してみてください。</p>
+      </a>
+      <a href="resume-2.html" class="card">
+        <h3>履歴書 #2 — レベル: ★★☆</h3>
+        <p>開発者がよく使うあの機能を悪用しています。</p>
+      </a>
+      <a href="resume-3.html" class="card">
+        <h3>履歴書 #3 — レベル: ★★★</h3>
+        <p>ソースコードを見ても気づきにくい、巧妙な手法です。</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    ⚠️ これはプロンプトインジェクションの教育デモです。社内セキュリティ啓発の目的でのみ使用してください。悪用は禁止されています。
+  </div>
+</body>
+</html>
